@@ -53,7 +53,7 @@ app.get('/:width/:height/:id', async ({ params }, res) => {
   } catch (error) {
     const image = createImage(width, height)
     fs.writeFileSync(filepath, image)
-    res.sendFile(filepath, { root })
+    res.sendFile(filepath, { root: __dirname })
   }
 })
 
