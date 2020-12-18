@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Image</title>
+  <meta name="description" content="Um gerador simples de imagem em cores degradê">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simple Image</h1>
+  <p>Gerador de imagem com um leve (as vezes pesado) degradê colorido que responde via dois endpoints:</p>
+  <h2>/:largura/:altura</h2>
+  <p>Gera uma imagem com degrade do tamanho que for passado nos parâmetros via rest.</p>
+  <p>Ex: <a href="https://vood.app/420/200">https://vood.app/420/200</a></p>
+  <img src="https://vood.app/420/200" alt="Imagem 420x200" width="420" height="200"/>
+  <h2>/:largura/:altura/:id</h2>
+  <p>Gera uma imagem com degrade do tamanho que for passado nos parâmetros via rest porém utilizará o ID passado como parâmetro para salvar a imagem e para poder retorná-la novamente.</p>
+  <p>Ex: <a href="https://vood.app/420/200/ola-mundo">https://vood.app/420/200/ola-mundo</a></p>
+  <img src="https://vood.app/420/200/ola-mundo" alt="Imagem 420x200" width="420" height="200"/>
+  <h2>Clone</h2>
+  <code>git clone https://github.com/lucasinocente/simple-image/</code>
+  <h2>Instalar</h2>
+  <code>npm install</code>
+  <h2>Rodar</h2>
+  <code>npm start</code>
+</body>
+</html>

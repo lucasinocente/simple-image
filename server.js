@@ -40,6 +40,10 @@ app.get('/:width/:height', async ({ params }, res) => {
   res.sendFile(filepath, { root: __dirname })
 })
 
+app.get('/', async ({ params }, res) => {
+  res.sendFile(__dirname + '/index.html');
+})
+
 app.get('/:width/:height/:id', async ({ params }, res) => {
   const width = parseInt(params.width, 10)
   const height = parseInt(params.height, 10)
